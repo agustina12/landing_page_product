@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: Montserrat, sans-serif;
+    height: 100%;
+}
+
+#page-wrapper{
+    /* position: relative; */
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+
+#header{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-bar li{
+    list-style: none;
+    display: inline-block;
+}
+
+#nav-bar a:hover{
+    color: rgb(44, 43, 43);
+    font-weight: bold;
+}
+a{
+    color: #ED1D24;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 20px;
+}
+
+#page-wrapper .hero-image{
+    content: "";
+    /* position: absolute; */
+    width: 90vw;
+    height: 60vh;
+    margin-top: 2%;
+    background-image: url("img/img-bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text{
+    padding-top: 14%;
+    padding-right: 3%;
+    text-align: right;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    color: rgb(36, 35, 35);
+    line-height: 60px;
+}
+
+.hero-text p{
+    font-weight: 500;
+    padding-top: 16px;
+    color: rgb(44, 43, 43);
+}
+
+/* subscribe */
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.subscribe__title{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.subscribe__copy{
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.form{
+    margin-bottom: 25px;
+}
+
+.form__email{
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: 1px solid #CAD3DB;
+    width: 431px;
+    font-size: 18px;
+    color: #ED1D24;
+}
+
+.form__email:focus{
+    outline: 1px solid #ED1D24;
+}
+
+.form__button{
+    background: #ED1D24;
+    padding: 10px;
+    border: none;
+    width: 244px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 4px 20px hsla(358, 85%, 52%, 0.4);
+}
+
+.form__button:hover{
+    box-shadow: 0 10px 20px hsla(358, 85%, 52%, 0.4);
+}
+
+.container{
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+.column{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+}
+
+.column img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.column h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(36, 35, 35);
+    padding-top: 34%;
+    padding-bottom: 34%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#uniqlo_teaser{
+    margin-top: 10%;
+}
+
+#uniqlo_teaser h1{
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(44, 43, 43);
+}
+
+/* pricing */
+#pricing{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid #e0dddc;
+    border-radius: 10px;
+}
+
+.product .level{
+    background-color: #e0dddc;
+    color: rgb(44, 43, 43);
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.product h2{
+    margin-top: 15px;
+}
+
+.product ol{
+    margin: 15px 0;
+}
+
+.product ol li{
+    padding: 5px 0;
+}
+
+.product button{
+    border: 0;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    background-color: #f74349;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+}
+
+.product button:hover{
+    background-color: #9e262a;
+    transition: background-color 1s;
+    box-shadow: 0 10px 20px hsla(356, 80%, 61%, 0.199);
+}
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+  footer > ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+   a:hover{
+    color: rgb(44, 43, 43);
+    font-weight: bold;
+}
+
+
+/* end pricing */
+
+/* responsive */
+@media screen and (max-width: 500px) {
+    #nav-bar a{
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    #heeader-img{
+        float: none;
+    }
+    .container{
+        width: 100%; 
+    }
+    .column h1{
+        font-size: 10px;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .form__button{
+       margin-top: 10PX;
+    width: 100%;
+    }
+    .form__email{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;
+    }
+    .text_contact{
+        font-size: 36px;
+        font-weight: bold;
+
+    }
+    #pricing {
+        flex-direction: column;
+      }
+      .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+  
+    
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 100%; 
+    }
+    .column h1{
+        font-size: 20px;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .form__button{
+       margin-top: 10PX;
+        width: 100%;
+    }
+    .form__email{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .column{
+        width: 100%;
+    }
+    .column h1{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20%;
+    }
+    #pricing {
+        flex-direction: column;
+      }
+      .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+  
+}
+
+@media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+
